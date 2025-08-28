@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Vertical Scroll</title>
+  <style>
+    .scroll-box {
+      width: 100%;           /* ความกว้างของกล่อง */
+      height: 400px;          /* ความสูงของกล่อง */
+      overflow-y: auto;       /* ให้เลื่อนขึ้น-ลงได้ */
+      overflow-x: hidden;     /* ซ่อนการเลื่อนซ้าย-ขวา */
+      border: 2px solid #ccc;
+      padding: 10px;
+    }
+
+    .scroll-box img {
+      display: flexbox;        /* ให้รูปเรียงบน-ล่าง */
+      width: 20%;            /* ให้กว้างเต็มกล่อง */
+      margin-bottom: 10px;    /* เว้นระยะระหว่างรูป */
+      border-radius: 10px;    /* ทำมุมโค้ง */
+    }
+  </style>
+</head>
+<body>
+  <h2>Preview :</h2>
+  <div class="scroll-box">
+    <img src="Profile/34299-where-to-watch-wind-breaker-anime.jpg" alt="ภาพ 1">
+    <img src="Profile/a375971e0e793f11a40e7ebe7fda228e.jpg" alt="ภาพ 2">
+    <img src="Profile/Anime_WindBreaker_KotohaTachibana_Season1_Episode1.jpg" alt="ภาพ 3">
+    <img src="Profile/d39514fe2823977ebe7ba3c3e3bee326.jpg" alt="ภาพ 4">
+    <img src="Profile/thumb-1920-1363559.jpeg" alt="ภาพ 5">
+  </div>
+</body>
+</html>

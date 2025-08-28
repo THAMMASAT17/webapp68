@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div style="border: 2px solid rgb(185, 185, 185); padding: 20px;">
+    <!-- credit by chatgpt not all -->
+    <div id="myBox">
+        <p>Click to go fullscreen</p>
+    </div>
+    <button onclick="enterFullscreen()" style="margin-top: 20px;">Go Fullscreen</button>
+</div>
+<script>
+    function enterFullscreen() {
+  const elem = document.getElementById("myBox");
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  }
+}
+</script>
+
+</body>
+</html>
