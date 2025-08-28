@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+        display: flex;
+        gap: 20px;
+        }
+
+        .item {
+        padding: 10px;
+        font-family: serif;
+        cursor: pointer;
+        transition: opacity 0.3s ease;
+        }
+
+        /* เมื่อ container มี .hovered และ .item ไม่ถูก hover จะจาง */
+        .container:hover .item {
+        opacity: 0.3;
+        }
+
+        /* ยกเว้น item ที่ถูก hover */
+        .container .item:hover {
+        opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div style="border: 2px solid rgb(185, 185, 185); height: 400px;">
+        <div class="container">
+            <div class="item">Case 1</div>
+            <div class="item">Case 2</div>
+            <div class="item">Case 3</div>
+        </div>
+    </div>
+</body>
+</html>
